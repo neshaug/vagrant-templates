@@ -12,6 +12,9 @@ apt-get install -y  \
     nodejs          \
     mongodb
 
+# To debug Meteor (nodejs) server side
+npm install -g node-inspector
+
 # http://meteor.com/main see: https://github.com/meteor/meteor
 curl https://install.meteor.com | /bin/sh
 
