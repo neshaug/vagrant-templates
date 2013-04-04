@@ -10,6 +10,12 @@ apt-get install -y  \
     vim             \
     curl            \
     nodejs          \
+    mongodb
 
 # http://meteor.com/main see: https://github.com/meteor/meteor
 curl https://install.meteor.com | /bin/sh
+
+# Can't run MongoDB in Vagrant share. Adding this environment variable will
+# make Meteor use the specified MongoDB instead.
+# http://docs.mongodb.org/manual/administration/production-notes/#production-nfs
+echo "export MONGO_URL=mongodb://localhost:27017/meteor" >> /home/vagrant/.bashrc
