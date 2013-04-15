@@ -1,0 +1,14 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+# https://docs.google.com/file/d/0B_wyIFR5m8JUeG93RXN3aC0xNmc/edit?usp=sharing
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "precise64-unity"
+  config.vm.box_url = "https://dl.dropboxusercontent.com/s/k3pvquekoz3elvl/precise64-unity.box"
+  config.ssh.forward_agent = true
+  config.ssh.forward_x11 = true
+  config.vm.provider "virtualbox" do |v|
+      v.gui = true
+  end
+  config.vm.provision :shell, :path => "bootstrap.sh"
+end
