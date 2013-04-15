@@ -29,3 +29,9 @@ ln -sf /home/vagrant/bin/apache-maven-3.0.5/bin/mvn /home/vagrant/bin/mvn
 rm apache-maven-3.0.5-bin.tar.gz
 
 chown -R vagrant:vagrant /home/vagrant/bin
+
+echo "Installing Eclipse plugins. Please be patient.."
+sudo -u vagrant -s /home/vagrant/bin/eclipse \
+-application org.eclipse.equinox.p2.director -noSplash \
+-repository http://download.eclipse.org/releases/juno \
+-installIUs org.eclipse.egit.feature.group
