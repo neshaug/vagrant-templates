@@ -43,8 +43,10 @@ sudo -u vagrant -s /home/vagrant/bin/eclipse \
 -repository http://download.eclipse.org/releases/juno,\
 http://m2eclipse.sonatype.org/sites/m2e,\
 http://findbugs.cs.umd.edu/eclipse/,\
+http://update.eclemma.org/,\
 http://eclipse-cs.sf.net/update/ \
 -installIUs org.eclipse.egit.feature.group,\
 org.eclipse.m2e.feature.feature.group,\
 edu.umd.cs.findbugs.plugin.eclipse.feature.group,\
+com.mountainminds.eclemma.feature.feature.group,\
 net.sf.eclipsecs.feature.group
