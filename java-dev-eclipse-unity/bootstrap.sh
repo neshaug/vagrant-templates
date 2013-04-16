@@ -46,6 +46,7 @@ http://findbugs.cs.umd.edu/eclipse/,\
 http://update.eclemma.org/,\
 http://sourceforge.net/projects/pmd/files/pmd-eclipse/update-site/,\
 http://dl.google.com/eclipse/plugin/4.2,\
+http://ccw.cgrand.net/updatesite,\
 http://eclipse-cs.sf.net/update/ \
 -installIUs org.eclipse.egit.feature.group,\
 org.eclipse.m2e.feature.feature.group,\
@@ -54,4 +55,5 @@ com.mountainminds.eclemma.feature.feature.group,\
 net.sourceforge.pmd.eclipse.feature.group,\
 com.google.gdt.eclipse.suite.e42.feature.feature.group,\
 com.google.gwt.eclipse.sdkbundle.feature.feature.group,\
+ccw.feature.feature.group,\
 net.sf.eclipsecs.feature.group
