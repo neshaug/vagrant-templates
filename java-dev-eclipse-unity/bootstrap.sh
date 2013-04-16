@@ -7,7 +7,8 @@ apt-get install -y  \
     tig             \
     vim             \
     curl            \
-    openjdk-7-jdk
+    openjdk-7-jdk   \
+    screen
 
 echo "export PATH=\"$PATH:/home/vagrant/bin\"" >> /home/vagrant/.bashrc
 echo "export MAVEN_HOME=\"/home/vagrant/bin/maven-3.0.5\"" >> /home/vagrant/.bashrc
