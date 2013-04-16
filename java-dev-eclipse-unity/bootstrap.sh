@@ -40,6 +40,6 @@ echo "Installing Eclipse plugins. Please be patient.."
 sudo -u vagrant -s /home/vagrant/bin/eclipse \
 -application org.eclipse.equinox.p2.director -noSplash \
 -repository http://download.eclipse.org/releases/juno,\
-http://m2eclipse.sonatype.org/sites/m2e\
+http://m2eclipse.sonatype.org/sites/m2e \
 -installIUs org.eclipse.egit.feature.group,\
 org.eclipse.m2e.feature.feature.group
